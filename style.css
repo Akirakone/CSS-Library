@@ -1,0 +1,121 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+      
+  /* Fixed width container class that will "auto-center" itself */
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+/*btn */
+.btn {
+    background-color: rgb(147, 147, 221);
+    color: white;
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    margin-left: 600px;
+}
+/*NAVBAR SECTION*/
+/*adds a color when mouse is ontop*/
+a:hover {
+    color:yellow;
+}
+
+a {
+    color: rgb(110, 110, 196);
+    text-decoration: underline;
+}
+/* This is for the background of your navbar*/
+.nav {
+    background-color: black;
+    color: white;
+    height: 35px;
+    padding: 8px 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+/* To make a "netflix" logo on right*/
+.nav-title {
+    font-size: 25px;
+    margin-left: 150px;
+}
+/* To dispay the list in a line like website menu*/
+.nav-links {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    list-style: none;  
+}
+/*BUTTONS*/
+/* This creates the ideal look for a search box to add text*/
+#Search {
+    width: 170px;
+    background-color: lightblue;
+    border: 1px solid darkblue;
+    color:darkblue;
+    border-radius: 40px 40px;
+    margin: left;
+    text-align: center;
+    font-size: 20px;
+    padding: 3px;
+}
+/*This creates a circle button */
+#Add {
+/*changing these two will chnage the size of the circle*/
+    margin: 50;
+    border-radius: 50%;
+/*changing these will change color scheme*/
+    background-color: rgb(46, 216, 216);
+    color: white;
+/*also affects sizing not sure how to explain*/
+    width: 45px;
+    height: 45px;
+    border: 1px solid;
+    font-size: 20px;
+/*these just move where the button is placed*/
+    margin: 20px;
+    margin-left: 15px;
+}
+/*This Creates a search button to click*/
+#Button {
+    width: 225px;
+    background-color:blue;
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    box-shadow: black 4px 3px 3px;
+    border: solid black 2px;
+    padding-right: 15px;
+    margin-top: 10px;
+}
+
+/*column Flex*/
+/*this changes the boxes to be in a line from left to right*/
+.row {
+    display: flex;
+}
+/*this changes the first row to display the piece of pie 1/4 for example evenly accross screen*/
+.row .col{ 
+    flex: 1px;
+}
+/* This changes the row 2 and calls on the piece you called for this row*/
+.row .col-2{
+flex: 2;
+}
+/*this changes the is the same but changed to use in row 3*/
+.row .col-3{
+flex: 3;
+}
+/*this changes the sizes and colors of each block in the rows1-3*/
+.col, .col-2, .col-3 {
+    color: white;
+    background-color:darkblue;
+    padding: 15px;
+    margin: 10px;
+}
